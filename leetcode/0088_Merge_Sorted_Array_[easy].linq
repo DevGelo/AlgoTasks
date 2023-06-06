@@ -24,13 +24,13 @@ void Main()
 	RunBenchmark();
 }
 
-[SimpleJob(launchCount: 2, warmupCount: 2, invocationCount: 10)]
+[SimpleJob(launchCount: 2, warmupCount: 2, invocationCount: 100)]
 public class Algo
 {
 	static Random rnd = new Random();
 
-	const int m = 20;
-	const int n = 10;
+	const int m = 200000;
+	const int n = 200000;
 	static int[] nums1 = new int[m + n];
 	static int[] nums2 = new int[n];
 
